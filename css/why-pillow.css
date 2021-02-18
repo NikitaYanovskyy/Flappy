@@ -1,0 +1,107 @@
+    .pillow_click {
+    cursor: pointer;
+  }
+  .pillow-popup-wrapper {
+    position: fixed;
+    top: 17px;
+    right: -400px;
+    bottom: 17px;
+    z-index: 20;
+    transition: .3s;
+  }
+  .pillow-popup-wrapper.active {
+    right: 17px;
+    transition: .3s;
+  }
+  .pillow-popup-wrapper .bg {
+    background: rgba(229,229,229,.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+  }
+  .pillow-popup-wrapper .forms-pillow {
+    width: 388px;
+    padding: 124px 16px;
+    border-radius: 24px;
+    background-color: #FAFAFA;
+    min-height: calc(100vh - 32px);
+    z-index: 1;
+  
+  }
+  .pillow-popup-wrapper .forms-pillow .title {
+      font-family: 'Rubik-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+      color: #3D3D3D;
+      margin-left: 10px;
+  }
+  
+  .pillow-popup-wrapper .forms-pillow .sub {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      color: #3D3D3D;
+      margin-left: 10px;
+      margin-top: 18px;
+      margin-bottom: 22px;
+  }
+
+  .pillow-popup-wrapper .forms-pillow .btn-pillow {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #FE6458;
+    border-radius: 24px;
+    margin-top: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  @media(max-width: 480px){
+    .pillow-popup-wrapper.active {
+      right: 17px;
+      width: 90%;
+      transition: .3s;
+    }
+    .pillow-popup-wrapper .forms-pillow {
+      width: 100%;
+      padding: 70px 15px;
+      border-radius: 24px;
+      background-color: #FAFAFA;
+      min-height: calc(100vh - 32px);
+      z-index: 1;
+    }
+    .pillow-popup-wrapper {
+      position: fixed;
+      top: 17px;
+      right: -200%;
+      bottom: 17px;
+      z-index: 20;
+      transition: .3s;
+    }
+    .pillow-popup-wrapper .forms-pillow .title {
+      font-family: 'Rubik-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 31px;
+      line-height: 43px;
+      color: #3D3D3D;
+      margin-left: 10px;
+    }
+  }

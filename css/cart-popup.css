@@ -1,0 +1,294 @@
+.cart-popup-wrapper {
+    position: fixed;
+    top: 17px;
+    right: -400px;
+    bottom: 17px;
+    z-index: 20;
+    transition: .3s;
+}
+
+.cart-popup-wrapper.active {
+    right: 17px;
+    transition: .3s;
+}
+
+.cart-popup-wrapper .bg {
+    background: rgba(229, 229, 229, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.cart-content-items {
+    margin-top: 36px;
+}
+
+.cart-delete {
+    margin-top: 7px;
+}
+
+.center-cart-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.variation-value {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.cart-price {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FE6458;
+}
+
+.cart-count {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #3D3D3D;
+    opacity: 0.4;
+}
+
+.count-minus,
+.count-plus,
+.cart-delete {
+    cursor: pointer;
+}
+
+.cart-count span {
+    margin: 0 5px
+}
+
+.center-cart-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.cart-content-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 5px 13px 0 8px;
+    margin-bottom: 16px;
+}
+
+.cart-img-box {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    height: 55px;
+}
+
+img.cart-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.item-title {
+    font-family: 'Rubik';
+    font-size: 11px;
+}
+
+.cart-total-price {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+p.total-lable {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #3D3D3D;
+    margin-right: 56px;
+}
+
+.total-price {
+    font-family: "Fredoka One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #FE6458;
+}
+
+.cart-popup-wrapper .forms-cart {
+    width: 388px;
+    padding: 75px 16px;
+    border-radius: 24px;
+    background-color: #FAFAFA;
+    min-height: calc(100vh - 32px);
+    z-index: 1;
+
+}
+
+.cart-popup-wrapper .forms-cart .title {
+    font-family: 'Rubik-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3D3D3D;
+    margin-left: 10px;
+}
+
+a.cart-check_out,
+a.cart-continue_shoping {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+a.cart-check_out {
+    background: #FE6458;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-top: 93px;
+}
+
+a.cart-continue_shoping {
+    margin-top: 16px;
+    font-weight: 500;
+    color: #FE6458;
+}
+
+/*
+.cart-popup-wrapper .forms-cart .sub {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3D3D3D;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+*/
+.cart-popup-wrapper .forms-cart .close {
+    position: absolute;
+    width: auto;
+    height: 14px;
+    right: 31px;
+    top: 32px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #D4D4D4;
+    cursor: pointer;
+    padding-left: 19px;
+    cursor: pointer;
+}
+
+.cart-popup-wrapper .forms-cart .close {}
+
+.cart-popup-wrapper .forms-cart .close .ico {
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.cart-popup-wrapper .forms-cart form label {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 56px;
+    background: #F3F3F3;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.cart-popup-wrapper .forms-cart form label input,
+.cart-popup-wrapper .forms-cart form label textarea {
+    height: 25px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #373737;
+    margin-top: 23px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.cart-popup-wrapper .forms-cart form label textarea {
+    height: 109px;
+    min-height: 109px;
+    max-height: 109px;
+}
+
+.cart-popup-wrapper .forms-cart form label i {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #8B8B8B;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@media(max-width: 480px){
+    .cart-popup-wrapper .forms-cart {
+        width: 100%;
+        padding: 75px 16px 45px;
+        border-radius: 24px;
+        background-color: #FAFAFA;
+        min-height: calc(100vh - 32px);
+        z-index: 1;
+    }
+    .cart-delete .ico svg{
+        width: 25px;
+        height: 15px;
+    }
+    .cart-img-box {
+        display: flex;
+        justify-content: center;
+        width: 94px;
+        margin: 0 10px 0 0;
+        height: 55px;
+    }
+    .cart-delete {
+        width: 17px;
+        margin-top: 7px;
+    }
+    .cart-delete .ico {
+        margin: 0 0 0 8px;
+    }
+}
